@@ -1,18 +1,11 @@
 package place
 
 import (
-	"BPMEngine/model"
+	"BPM_Engine/model"
 	"fmt"
 )
 
 func Tokenmove(enabletran []model.Transition,p []model.Place) []model.Place {
-	//取随机下标
-	//rand.Seed(time.Now().Unix())
-	//m := rand.Intn(len(enabletran))
-	//placesID := enabletran[m].ForwardPlaceID
-	//for i:=0;i<len(placesID);i++ {
-	//}
-
 	//只有一个transition满足条件，此时所有前向库所具有相同属性的token减一，所有后向库所增加一个具有相同属性的token
 	if len(enabletran) == 1 {
 		//此transition只有一个前向库所，可能含有多个不同属性的token

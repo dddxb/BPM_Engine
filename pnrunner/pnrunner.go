@@ -1,9 +1,9 @@
 package pnrnner
 
 import (
-	"BPMEngine/model"
-	"BPMEngine/place"
-	"BPMEngine/transition"
+	"BPM_Engine/model"
+	"BPM_Engine/place"
+	"BPM_Engine/transition"
 	"fmt"
 )
 
@@ -46,27 +46,3 @@ func ContinueIfPossible (p []model.Place,t []model.Transition) {
 	fmt.Println("")
 	ContinueIfPossible(p,t)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//map转slice
-//enabletran := make([]model.Transition,len(enableTran))
-//i := 0
-//for _ ,v := range enableTran {
-//	enabletran[i] = v
-//	i++
-//}

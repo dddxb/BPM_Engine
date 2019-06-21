@@ -1,7 +1,7 @@
 package transition
 
 import (
-	"BPMEngine/model"
+	"BPM_Engine/model"
 	"fmt"
 )
 
@@ -34,45 +34,3 @@ func Enable(tran model.Transition,p []model.Place) bool{
 	}
 	return true
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-////找出此transition的所有前向place并放入map中
-//forwardPlace := make(map[int]model.Place)
-//for i:= 0;i<len(p);i++ {
-//	if tran.PNID == p[i].PNID { //同一个PN
-//		for j:=0;j<len(tran.ForwardPlaceID);j++ {
-//			for k:=0;k<len(p[i].BackwardTranID);k++ {
-//				if tran.ForwardPlaceID[j] == p[i].BackwardTranID[k] && len(p[i].Token) >0 && p[i].Result == tran.Condition{
-//					forwardPlace[i] = p[i]
-//				}
-//			}
-//		}
-//	}
-//}
-//if len(tran.ForwardPlaceID) == len(forwardPlace) {
-//	return true
-//}
-//return false

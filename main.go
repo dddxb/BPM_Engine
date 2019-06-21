@@ -1,8 +1,8 @@
 package main
 
 import (
-	"BPMEngine/model"
-	"BPMEngine/pnrunner"
+	"BPM_Engine/model"
+	"BPM_Engine/pnrunner"
 )
 
 func main() {
@@ -74,9 +74,6 @@ func main() {
 	//获得库所和任务数组
 	p := []model.Place{red1,yellow1,green1}
 	t := []model.Transition{y2r,r2g,g2y}
-
-	//fmt.Println(p)
-	//fmt.Println(t)
 
 	//调用函数遍历
 	pnrnner.ContinueIfPossible(p,t)
